@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block mycontent %}
+    <h1>ICT students</h1>
+    {% for stud in mylist %}
+    <table class="table">
+        <tr>
+            <td>Name :</td>
+            <td>{{stud.id}}</td>
+        </tr>
+        <tr>
+            <td>Mobile :</td>
+            <td>{{stud.mob}}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{stud.email}}</td>
+        </tr>
+    </table>
+    {% endfor %}
+{% endblock %}
